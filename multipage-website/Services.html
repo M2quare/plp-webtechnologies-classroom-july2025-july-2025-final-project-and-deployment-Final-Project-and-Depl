@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | BluTech</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: #007BFF;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: #007BFF;
+      transform: translateY(-2px);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #007BFF 0%, #00C6FF 100%);
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Services Section */
+    .services-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #007BFF;
+    }
+
+    .service-card p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f1f1f1;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1rem 0 0;
+      padding: 0;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #007BFF;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Blu<span>tech</span></h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero services-hero">
+    <div class="hero-content">
+      <h2>Our Services</h2>
+      <p>At Blutech, we provide innovative, scalable, and user-focused digital solutions designed to help businesses grow and succeed in today’s fast-moving world.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <main>
+    <section class="services-section">
+      <div class="service-card">
+        <h3>💻 Web Development</h3>
+        <p>We build fast, responsive, and secure websites tailored to your business needs, using modern frameworks and best coding practices.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🎨 UI/UX Design</h3>
+        <p>Our design team creates intuitive and visually stunning interfaces that provide seamless user experiences across devices.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>📱 Mobile-Friendly Solutions</h3>
+        <p>We ensure every website and app is optimized for mobile, delivering performance and usability that engage your audience anywhere.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>☁️ Cloud & DevOps</h3>
+        <p>Our experts help you streamline deployment pipelines, optimize infrastructure, and adopt cloud-native solutions for efficiency and scalability.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🔒 Cybersecurity</h3>
+        <p>Protect your business with our end-to-end security solutions, including audits, compliance, and real-time monitoring.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Blutech | All rights reserved</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
